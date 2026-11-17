@@ -7,7 +7,10 @@
 
     <title>CreatorMagic AI - Create Without Limits</title>
 
-    <meta name="description" content="Create AI content, cinematic videos, Instagram reels and stories with CreatorMagic AI.">
+    <meta name="description"
+        content="Transform your imagination into amazing AI prompts, cinematic videos, Instagram reels and creative stories with CreatorMagic AI.">
+
+    <meta name="theme-color" content="#080b18">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,15 +21,20 @@
 
     <header class="navbar">
 
-        <div class="logo">
-            ✨ CreatorMagic AI
-        </div>
+        <a href="#home" class="logo">
+            <span class="logo-icon">✦</span>
+            CreatorMagic <span class="logo-ai">AI</span>
+        </a>
 
         <nav>
             <a href="#home">Home</a>
-            <a href="#tools">AI Tools</a>
+            <a href="#tools">AI Studios</a>
             <a href="#about">About</a>
         </nav>
+
+        <a href="#tools" class="nav-button">
+            Start Creating →
+        </a>
 
     </header>
 
@@ -35,58 +43,94 @@
 
     <section class="hero" id="home">
 
+        <div class="hero-glow"></div>
+
         <div class="hero-content">
 
             <div class="badge">
-                ✨ YOUR CREATIVE AI STUDIO
+                ✨ YOUR CREATIVE WORLD, POWERED BY AI
             </div>
 
             <h1>
-                Turn Your Imagination
-                <span>Into Reality.</span>
+                Create. Imagine.
+                <span>Inspire.</span>
             </h1>
 
             <p>
-                Create amazing content, cinematic videos,
-                Instagram reels and AI-powered stories.
+                Turn your ideas into extraordinary creations.
+                Generate creative AI prompts, cinematic video concepts,
+                engaging stories and social media content.
             </p>
 
-            <a href="#tools" class="main-button">
-                Explore AI Tools →
-            </a>
+            <div class="hero-buttons">
+
+                <a href="#tools" class="main-button">
+                    Explore AI Studios →
+                </a>
+
+                <a href="#about" class="secondary-button">
+                    Discover More
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+                <span>✦ Creative Freedom</span>
+                <span>✦ Powerful AI Prompts</span>
+                <span>✦ Made for Creators</span>
+            </div>
 
         </div>
+
+        <div class="hero-decoration decoration-one"></div>
+        <div class="hero-decoration decoration-two"></div>
 
     </section>
 
 
-    <!-- AI TOOLS -->
+    <!-- AI STUDIOS -->
 
     <section class="tools-section" id="tools">
 
-        <h2>Explore Our AI Tools</h2>
+        <div class="section-label">
+            ✦ EXPLORE OUR CREATIVE WORLD
+        </div>
+
+        <h2>
+            Your Creative Toolkit.
+            <span>One Platform.</span>
+        </h2>
 
         <p class="section-description">
-            Everything you need to create amazing digital content.
+            Everything you need to transform your imagination
+            into professional digital content.
         </p>
+
 
         <div class="tools-grid">
 
+
             <!-- IMAGE STUDIO -->
 
-            <div class="tool-card">
+            <div class="tool-card image-card">
 
-                <div class="tool-icon">🖼️</div>
+                <div class="card-top">
+                    <div class="tool-icon">🎨</div>
+                    <span class="card-number">01</span>
+                </div>
+
+                <div class="card-tag">VISUAL CREATIVITY</div>
 
                 <h3>AI Image Studio</h3>
 
                 <p>
-                    Create creative AI image prompts
-                    and professional visual concepts.
+                    Transform your imagination into detailed,
+                    professional AI image-generation prompts
+                    and stunning visual concepts.
                 </p>
 
                 <button onclick="openTool('image')">
-                    Explore Tool →
+                    Explore Studio <span>→</span>
                 </button>
 
             </div>
@@ -94,19 +138,25 @@
 
             <!-- VIDEO STUDIO -->
 
-            <div class="tool-card">
+            <div class="tool-card video-card">
 
-                <div class="tool-icon">🎬</div>
+                <div class="card-top">
+                    <div class="tool-icon">🎬</div>
+                    <span class="card-number">02</span>
+                </div>
+
+                <div class="card-tag">CINEMATIC CREATION</div>
 
                 <h3>AI Video Studio</h3>
 
                 <p>
-                    Create cinematic video prompts
-                    and animation concepts.
+                    Create cinematic video prompts with
+                    camera movements, animation instructions
+                    and professional visual direction.
                 </p>
 
                 <button onclick="openTool('video')">
-                    Explore Tool →
+                    Explore Studio <span>→</span>
                 </button>
 
             </div>
@@ -114,19 +164,25 @@
 
             <!-- REEL STUDIO -->
 
-            <div class="tool-card">
+            <div class="tool-card reel-card">
 
-                <div class="tool-icon">📱</div>
+                <div class="card-top">
+                    <div class="tool-icon">📱</div>
+                    <span class="card-number">03</span>
+                </div>
+
+                <div class="card-tag">SOCIAL MEDIA GROWTH</div>
 
                 <h3>Instagram Reel Studio</h3>
 
                 <p>
-                    Discover creative reel ideas,
-                    hooks and captions.
+                    Discover engaging reel ideas, powerful
+                    hooks, creative scripts, captions
+                    and relevant hashtags.
                 </p>
 
                 <button onclick="openTool('reel')">
-                    Explore Tool →
+                    Explore Studio <span>→</span>
                 </button>
 
             </div>
@@ -134,53 +190,88 @@
 
             <!-- STORY STUDIO -->
 
-            <div class="tool-card">
+            <div class="tool-card story-card">
 
-                <div class="tool-icon">📖</div>
+                <div class="card-top">
+                    <div class="tool-icon">📖</div>
+                    <span class="card-number">04</span>
+                </div>
+
+                <div class="card-tag">STORYTELLING MAGIC</div>
 
                 <h3>AI Story Studio</h3>
 
                 <p>
-                    Create interesting stories
-                    and scene-by-scene prompts.
+                    Bring your ideas to life with creative
+                    stories, engaging characters and
+                    detailed scene-by-scene prompts.
                 </p>
 
                 <button onclick="openTool('story')">
-                    Explore Tool →
+                    Explore Studio <span>→</span>
                 </button>
 
             </div>
 
-
-            <!-- SOURCE TO VIDEO CARD TEMPORARILY HIDDEN -->
-
-            <!-- Original code preserved for future activation.
-
-            <div class="tool-card">
-
-                <div class="tool-icon">🚀</div>
-
-                <h3>AI Source-to-Video Studio</h3>
-
-                <p>
-                    Paste a YouTube or website link
-                    and turn its content into a cinematic video.
-                </p>
-
-                <button onclick="openSourceStudio()">
-                    Create Video →
-                </button>
-
-            </div>
-
-            -->
 
         </div>
 
     </section>
 
 
-    <!-- SOURCE TO VIDEO STUDIO - PRESERVED BUT HIDDEN -->
+    <!-- WHY CREATORMAGIC -->
+
+    <section class="features-section">
+
+        <div class="section-label">
+            ✦ WHY CREATORMAGIC AI
+        </div>
+
+        <h2>
+            Creativity Without
+            <span>Complications.</span>
+        </h2>
+
+        <p class="section-description">
+            Powerful creative tools designed to make
+            content creation easier.
+        </p>
+
+
+        <div class="features-grid">
+
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h3>Easy to Use</h3>
+                <p>Simple tools and easy creative workflows.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <h3>Creative Prompts</h3>
+                <p>Detailed prompts for better creative results.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🌍</div>
+                <h3>Multiple Studios</h3>
+                <p>Different creative tools in one platform.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Create from your phone, tablet or computer.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOURCE TO VIDEO STUDIO - HIDDEN -->
+
+    <!-- Original functionality preserved. -->
 
     <section class="tools-section" id="sourceStudio"
         style="display:none;">
@@ -190,7 +281,6 @@
         <p class="section-description">
             Transform your favourite sources into engaging videos.
         </p>
-
 
         <div class="tool-card"
             style="max-width:750px;margin:auto;text-align:left;">
@@ -208,7 +298,6 @@
                 style="width:100%;height:100px;padding:15px;border-radius:8px;margin:15px 0;background:#0b1020;color:white;border:1px solid #8b5cf6;font-size:15px;"
             ></textarea>
 
-
             <h3>Step 2: Select Video Settings</h3>
 
             <label>Video Type</label>
@@ -225,7 +314,6 @@
 
             </select>
 
-
             <label>Video Language</label>
 
             <select id="sourceLanguage"
@@ -236,7 +324,6 @@
                 <option value="Marathi">Marathi</option>
 
             </select>
-
 
             <label>Video Duration</label>
 
@@ -251,7 +338,6 @@
 
             </select>
 
-
             <button onclick="analyseSource()"
                 style="width:100%;padding:15px;background:#8b5cf6;color:white;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer;">
 
@@ -259,10 +345,7 @@
 
             </button>
 
-
-            <div id="sourceResult" style="margin-top:25px;">
-
-            </div>
+            <div id="sourceResult" style="margin-top:25px;"></div>
 
         </div>
 
@@ -273,13 +356,32 @@
 
     <section class="about-section" id="about">
 
-        <h2>About CreatorMagic AI</h2>
+        <div class="about-content">
 
-        <p>
-            CreatorMagic AI is your creative digital studio.
-            Our goal is to make content creation easier
-            with simple and powerful AI-powered tools.
-        </p>
+            <div class="section-label">
+                ✦ ABOUT OUR PLATFORM
+            </div>
+
+            <h2>
+                Your Imagination.
+                <span>Our Creativity.</span>
+            </h2>
+
+            <p>
+                CreatorMagic AI is your creative digital studio,
+                bringing powerful AI-powered creative tools
+                together in one place.
+
+                Whether you are a content creator, storyteller
+                or someone with big ideas, our platform helps
+                you transform imagination into creative content.
+            </p>
+
+            <a href="#tools" class="main-button">
+                Start Exploring →
+            </a>
+
+        </div>
 
     </section>
 
@@ -288,15 +390,41 @@
 
     <footer>
 
-        <p>
-            © 2026 CreatorMagic AI.
-            Create Without Limits.
-        </p>
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    CreatorMagic <span class="logo-ai">AI</span>
+                </div>
+
+                <p>
+                    Imagine More. Create More. Inspire More.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#tools">AI Studios</a>
+                <a href="#about">About</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 CreatorMagic AI. All Rights Reserved.
+
+        </div>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- EXISTING JAVASCRIPT -->
 
     <script src="script.js"></script>
 
