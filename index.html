@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CreatorMagic AI - Create Without Limits</title>
+
+    <meta name="description" content="Create AI content, cinematic videos, Instagram reels and stories with CreatorMagic AI.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ✨ CreatorMagic AI
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tools">AI Tools</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ YOUR CREATIVE AI STUDIO
+            </div>
+
+            <h1>
+                Turn Your Imagination
+                <span>Into Reality.</span>
+            </h1>
+
+            <p>
+                Create amazing content, cinematic videos,
+                Instagram reels and AI-powered stories.
+            </p>
+
+            <a href="#tools" class="main-button">
+                Explore AI Tools →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI TOOLS -->
+
+    <section class="tools-section" id="tools">
+
+        <h2>Explore Our AI Tools</h2>
+
+        <p class="section-description">
+            Everything you need to create amazing digital content.
+        </p>
+
+        <div class="tools-grid">
+
+            <!-- IMAGE STUDIO -->
+
+            <div class="tool-card">
+
+                <div class="tool-icon">🖼️</div>
+
+                <h3>AI Image Studio</h3>
+
+                <p>
+                    Create creative AI image prompts
+                    and professional visual concepts.
+                </p>
+
+                <button onclick="openTool('image')">
+                    Explore Tool →
+                </button>
+
+            </div>
+
+
+            <!-- VIDEO STUDIO -->
+
+            <div class="tool-card">
+
+                <div class="tool-icon">🎬</div>
+
+                <h3>AI Video Studio</h3>
+
+                <p>
+                    Create cinematic video prompts
+                    and animation concepts.
+                </p>
+
+                <button onclick="openTool('video')">
+                    Explore Tool →
+                </button>
+
+            </div>
+
+
+            <!-- REEL STUDIO -->
+
+            <div class="tool-card">
+
+                <div class="tool-icon">📱</div>
+
+                <h3>Instagram Reel Studio</h3>
+
+                <p>
+                    Discover creative reel ideas,
+                    hooks and captions.
+                </p>
+
+                <button onclick="openTool('reel')">
+                    Explore Tool →
+                </button>
+
+            </div>
+
+
+            <!-- STORY STUDIO -->
+
+            <div class="tool-card">
+
+                <div class="tool-icon">📖</div>
+
+                <h3>AI Story Studio</h3>
+
+                <p>
+                    Create interesting stories
+                    and scene-by-scene prompts.
+                </p>
+
+                <button onclick="openTool('story')">
+                    Explore Tool →
+                </button>
+
+            </div>
+
+
+            <!-- SOURCE TO VIDEO CARD TEMPORARILY HIDDEN -->
+
+            <!-- Original code preserved for future activation.
+
+            <div class="tool-card">
+
+                <div class="tool-icon">🚀</div>
+
+                <h3>AI Source-to-Video Studio</h3>
+
+                <p>
+                    Paste a YouTube or website link
+                    and turn its content into a cinematic video.
+                </p>
+
+                <button onclick="openSourceStudio()">
+                    Create Video →
+                </button>
+
+            </div>
+
+            -->
+
+        </div>
+
+    </section>
+
+
+    <!-- SOURCE TO VIDEO STUDIO - PRESERVED BUT HIDDEN -->
+
+    <section class="tools-section" id="sourceStudio"
+        style="display:none;">
+
+        <h2>🚀 AI Source-to-Video Studio</h2>
+
+        <p class="section-description">
+            Transform your favourite sources into engaging videos.
+        </p>
+
+
+        <div class="tool-card"
+            style="max-width:750px;margin:auto;text-align:left;">
+
+            <h3>Step 1: Add Your Source</h3>
+
+            <p>
+                Paste a YouTube video, website article
+                or blog URL below.
+            </p>
+
+            <textarea
+                id="sourceURL"
+                placeholder="Paste your YouTube or website URL here..."
+                style="width:100%;height:100px;padding:15px;border-radius:8px;margin:15px 0;background:#0b1020;color:white;border:1px solid #8b5cf6;font-size:15px;"
+            ></textarea>
+
+
+            <h3>Step 2: Select Video Settings</h3>
+
+            <label>Video Type</label>
+
+            <select id="sourceVideoType"
+                style="width:100%;padding:12px;margin:10px 0 20px;background:#0b1020;color:white;border:1px solid #8b5cf6;border-radius:8px;">
+
+                <option value="educational">Educational Video</option>
+                <option value="cinematic">Cinematic Video</option>
+                <option value="storytelling">Storytelling Video</option>
+                <option value="youtube">YouTube Video</option>
+                <option value="shorts">YouTube Shorts</option>
+                <option value="reel">Instagram Reel</option>
+
+            </select>
+
+
+            <label>Video Language</label>
+
+            <select id="sourceLanguage"
+                style="width:100%;padding:12px;margin:10px 0 20px;background:#0b1020;color:white;border:1px solid #8b5cf6;border-radius:8px;">
+
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Marathi">Marathi</option>
+
+            </select>
+
+
+            <label>Video Duration</label>
+
+            <select id="sourceDuration"
+                style="width:100%;padding:12px;margin:10px 0 20px;background:#0b1020;color:white;border:1px solid #8b5cf6;border-radius:8px;">
+
+                <option value="30 seconds">30 Seconds</option>
+                <option value="1 minute">1 Minute</option>
+                <option value="3 minutes">3 Minutes</option>
+                <option value="5 minutes">5 Minutes</option>
+                <option value="10 minutes">10 Minutes</option>
+
+            </select>
+
+
+            <button onclick="analyseSource()"
+                style="width:100%;padding:15px;background:#8b5cf6;color:white;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer;">
+
+                🔍 Analyse Source
+
+            </button>
+
+
+            <div id="sourceResult" style="margin-top:25px;">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about-section" id="about">
+
+        <h2>About CreatorMagic AI</h2>
+
+        <p>
+            CreatorMagic AI is your creative digital studio.
+            Our goal is to make content creation easier
+            with simple and powerful AI-powered tools.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 CreatorMagic AI.
+            Create Without Limits.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
